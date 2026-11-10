@@ -1,5 +1,5 @@
 // Ganti dengan URL Worker setelah backend berhasil di-deploy.
-const API_BASE = "https://GANTI-DENGAN-NAMA-WORKER.workers.dev";
+const API_BASE = "https://shadowbypass.selenesprint.workers.dev";";
 const input = document.querySelector("#urlInput");
 const button = document.querySelector("#checkBtn");
 const message = document.querySelector("#message");
