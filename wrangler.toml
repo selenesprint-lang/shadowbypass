@@ -1,6 +1,6 @@
-name = "shadowbypass-api"
+name = "shadowbypass"
 main = "worker.js"
-compatibility_date = "2026-11-11"
+compatibility_date = "2026-11-09"
 
 [vars]
 # Setelah website Pages aktif, ganti * dengan origin Pages, contoh:
