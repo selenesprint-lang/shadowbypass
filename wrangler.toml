@@ -1,0 +1,8 @@
+name = "shadowbypass-api"
+main = "worker.js"
+compatibility_date = "2026-11-11"
+
+[vars]
+# Setelah website Pages aktif, ganti * dengan origin Pages, contoh:
+# ALLOWED_ORIGIN = "https://shadowbypass.pages.dev"
+ALLOWED_ORIGIN = "*"

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <title>ShadowBypass — URL Inspector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="#"><span class="brand-mark">S</span><span>Shadow<span class="accent">Bypass</span><small>SAFE URL INSPECTOR</small></span></a>
+      <span class="status"><i></i> URL Inspector</span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">LINK TRANSPARENCY TOOL</div>
+      <h1>Lihat ke mana<br><span>sebuah link mengarah.</span></h1>
+      <p>Periksa rantai pengalihan URL publik dengan lebih jelas. Tidak melewati login, CAPTCHA, paywall, atau pembatasan akses.</p>
+    </section>
+
+    <section class="panel">
+      <label for="urlInput">Tempel URL untuk diperiksa</label>
+      <div class="input-row">
+        <input id="urlInput" type="url" placeholder="https://contoh.com/link" autocomplete="url">
+        <button id="checkBtn">Periksa link <span>→</span></button>
+      </div>
+      <p class="hint">Hanya URL HTTP/HTTPS publik. Jangan masukkan link pribadi atau token rahasia.</p>
+      <div id="message" class="message" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="result" class="panel result hidden">
+      <div class="result-head"><h2>Hasil pemeriksaan</h2><span id="hopCount" class="count"></span></div>
+      <div id="chain" class="chain"></div>
+      <div id="finalBox" class="final-box hidden"><small>URL tujuan terakhir yang terdeteksi</small><a id="finalUrl" target="_blank" rel="noopener noreferrer"></a></div>
+    </section>
+
+    <section class="panel history-panel">
+      <div class="result-head"><h2>Riwayat lokal</h2><button id="clearHistory" class="ghost">Hapus riwayat</button></div>
+      <div id="history" class="history-empty">Belum ada pemeriksaan.</div>
+    </section>
+
+    <footer>ShadowBypass · Pemeriksaan URL publik secara aman</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
